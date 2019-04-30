@@ -12,8 +12,9 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private Vector3 m_CamForward;             // The current forward direction of the camera
         private Vector3 m_Move;
         private bool m_Jump;                      // the world-relative desired move direction, calculated from the camForward and user input.
+        public float speed = 3.0f;
 
-        
+
         private void Start()
         {
             // get the transform of the main camera
@@ -35,10 +36,13 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
         private void Update()
         {
+          
+
             if (!m_Jump)
             {
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
             }
+            
         }
 
 

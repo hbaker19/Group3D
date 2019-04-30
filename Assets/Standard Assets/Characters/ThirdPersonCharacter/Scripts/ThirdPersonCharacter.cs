@@ -28,9 +28,10 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		Vector3 m_CapsuleCenter;
 		CapsuleCollider m_Capsule;
 		bool m_Crouching;
+   
 
 
-		void Start()
+        void Start()
 		{
 			m_Animator = GetComponent<Animator>();
 			m_Rigidbody = GetComponent<Rigidbody>();
@@ -143,13 +144,26 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			// which affects the movement speed because of the root motion.
 			if (m_IsGrounded && move.magnitude > 0)
 			{
-				m_Animator.speed = m_AnimSpeedMultiplier;
-			}
+                m_Animator.speed = m_AnimSpeedMultiplier;
+                Vector3 forward = Camera.main.transform.forward;
+                forward.y = 0;
+                forward.Normalize();
+                float horizontal = Input.GetAxis("Horizontal");
+                float vertical = Input.GetAxis("Vertical");
+                forward *= vertical;
+                Vector3 right = Camera.main.transform.right;
+                right *= horizontal;
+                Vector3 combined = forward + right;
+                combined.y = 0;
+                combined.Normalize();
+                m_Rigidbody.velocity = combined * 10;
+
+            }
 			else
 			{
 				// don't use that while airborne
 				m_Animator.speed = 1;
-			}
+            }
 		}
 
 
@@ -160,7 +174,19 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			m_Rigidbody.AddForce(extraGravityForce);
 
 			m_GroundCheckDistance = m_Rigidbody.velocity.y < 0 ? m_OrigGroundCheckDistance : 0.01f;
-		}
+            Vector3 forward = Camera.main.transform.forward;
+            forward.y = 0;
+            forward.Normalize();
+            float horizontal = Input.GetAxis("Horizontal");
+            float vertical = Input.GetAxis("Vertical");
+            forward *= vertical;
+            Vector3 right = Camera.main.transform.right;
+            right *= horizontal;
+            Vector3 combined = forward + right;
+            combined.y = 0;
+            combined.Normalize();
+            m_Rigidbody.velocity = combined * 10;
+        }
 
 
 		void HandleGroundedMovement(bool crouch, bool jump)
