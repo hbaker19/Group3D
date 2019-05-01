@@ -74,7 +74,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
 			// send input and other state parameters to the animator
 			UpdateAnimator(move);
-		}
+            Debug.Log(m_Rigidbody.velocity);
+        }
 
 
 		void ScaleCapsuleForCrouching(bool crouch)
@@ -169,37 +170,29 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
 		void HandleAirborneMovement()
 		{
+            
 			// apply extra gravity from multiplier:
 			Vector3 extraGravityForce = (Physics.gravity * m_GravityMultiplier) - Physics.gravity;
 			m_Rigidbody.AddForce(extraGravityForce);
 
-			m_GroundCheckDistance = m_Rigidbody.velocity.y < 0 ? m_OrigGroundCheckDistance : 0.01f;
-            Vector3 forward = Camera.main.transform.forward;
-            forward.y = 0;
-            forward.Normalize();
-            float horizontal = Input.GetAxis("Horizontal");
-            float vertical = Input.GetAxis("Vertical");
-            forward *= vertical;
-            Vector3 right = Camera.main.transform.right;
-            right *= horizontal;
-            Vector3 combined = forward + right;
-            combined.y = 0;
-            combined.Normalize();
-            m_Rigidbody.velocity = combined * 10;
+          
+
         }
 
 
 		void HandleGroundedMovement(bool crouch, bool jump)
 		{
-			// check whether conditions are right to allow a jump:
-			if (jump && !crouch && m_Animator.GetCurrentAnimatorStateInfo(0).IsName("Grounded"))
+            Debug.Log(m_Rigidbody.velocity);
+            // check whether conditions are right to allow a jump:
+            if (jump && !crouch && m_Animator.GetCurrentAnimatorStateInfo(0).IsName("Grounded"))
 			{
 				// jump!
 				m_Rigidbody.velocity = new Vector3(m_Rigidbody.velocity.x, m_JumpPower, m_Rigidbody.velocity.z);
 				m_IsGrounded = false;
 				m_Animator.applyRootMotion = false;
 				m_GroundCheckDistance = 0.1f;
-			}
+                
+            }
 		}
 
 		void ApplyExtraTurnRotation()
@@ -220,7 +213,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
 				// we preserve the existing y part of the current velocity.
 				v.y = m_Rigidbody.velocity.y;
-				m_Rigidbody.velocity = v;
+				//m_Rigidbody.velocity = v;
 			}
 		}
 
