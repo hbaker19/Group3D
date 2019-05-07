@@ -15,6 +15,8 @@ public class CharacterSwtich : MonoBehaviour
 
     public Image ColbyImage;
     public Image RoboImage;
+    public Image RBImage;
+    public Image LBImage;
 
     public Canvas UI;
 
@@ -27,14 +29,17 @@ public class CharacterSwtich : MonoBehaviour
         ColbyCam = GameObject.Find("Camera.C");
         RoboCam = GameObject.Find("Camera.R");
 
-        
+        RoboImage.GetComponent<Image>().enabled = true;
+        ColbyImage.GetComponent<Image>().enabled = false;
 
+        RBImage.GetComponent<Image>().enabled = true;
+        LBImage.GetComponent<Image>().enabled = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire3") && RoboImage == false)
+        if (Input.GetButtonDown("Fire3") && RoboImage == true)
         {
 
             Colby.GetComponent<Rigidbody>().isKinematic = true;
@@ -50,7 +55,31 @@ public class CharacterSwtich : MonoBehaviour
             RoboCam.GetComponent<Camera>().enabled = true;
 
             ColbyImage.GetComponent<Image>().enabled = true;
+            RoboImage.GetComponent<Image>().enabled = false;
 
+            RBImage.GetComponent<Image>().enabled = false;
+            LBImage.GetComponent<Image>().enabled = true;
+
+        }
+        else if (Input.GetButtonDown("Fire2") && ColbyImage == true)
+        {
+            Colby.GetComponent<Rigidbody>().isKinematic = false;
+            Robo.GetComponent<Rigidbody>().isKinematic = true;
+
+            Colby.GetComponent<ThirdPersonCharacter>().enabled = true;
+            Colby.GetComponent<ThirdPersonUserControl>().enabled = true;
+
+            Robo.GetComponent<ThirdPersonCharacter>().enabled = false;
+            Robo.GetComponent<ThirdPersonUserControl>().enabled = false;
+
+            ColbyCam.GetComponent<Camera>().enabled = true;
+            RoboCam.GetComponent<Camera>().enabled = false;
+
+            ColbyImage.GetComponent<Image>().enabled = false;
+            RoboImage.GetComponent<Image>().enabled = true;
+
+            RBImage.GetComponent<Image>().enabled = true;
+            LBImage.GetComponent<Image>().enabled = false;
         }
     }
 }
