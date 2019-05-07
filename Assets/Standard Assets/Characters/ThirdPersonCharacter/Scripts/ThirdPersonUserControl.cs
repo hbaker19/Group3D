@@ -41,6 +41,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             if (!m_Jump)
             {
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
+                
             }
             
         }
@@ -53,6 +54,28 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             float h = CrossPlatformInputManager.GetAxis("Horizontal");
             float v = CrossPlatformInputManager.GetAxis("Vertical");
             bool crouch = Input.GetKey(KeyCode.C);
+            RaycastHit hit;
+            if(Physics.Raycast(transform.position, -transform.up, out hit, 0.1f) && h == 0 && v == 0 && !m_Jump)
+            {
+                if(hit.collider.gameObject.tag == "Stairs")
+                {
+                    GetComponent<Rigidbody>().drag = Mathf.Infinity;
+                    
+                }
+                
+            }
+            else
+            {
+                GetComponent<Rigidbody>().drag = 3;
+            }
+            /*if(h != 0 || v != 0)
+            {
+                GetComponent<Rigidbody>().drag = 3;
+            }
+            else if (h == 0 && v == 0)
+            {
+                GetComponent<Rigidbody>().drag = Mathf.Infinity;
+            }*/
 
             // calculate move direction to pass to character
             if (m_Cam != null)
