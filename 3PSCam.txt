@@ -1,0 +1,2 @@
+StandardAssets/Cameras/Prefabs
+FreeLookCam: Add to hierarchy, set target to player, move speed to 5, lock cursor.
