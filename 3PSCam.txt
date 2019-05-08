@@ -1,5 +1,0 @@
-StandardAssets/Cameras/Prefabs
-FreeLookCam: Add to hierarchy, set target to player, move speed to 5, lock cursor.
-
-3PSController: https://blogs.unity3d.com/2014/04/14/turn-your-character-into-a-player/
-steps 8+9
