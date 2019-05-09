@@ -49,6 +49,8 @@ public class Colors : MonoBehaviour
         CheckMarkColbyA.GetComponent<RawImage>().enabled = false;
         CheckMarkColbyH.GetComponent<RawImage>().enabled = false;
         CheckMarkColbyR.GetComponent<RawImage>().enabled = false;
+        //Cursor.visible = false;
+        //Screen.lockCursor = false;
     }
 
     public void ColbyA()
@@ -58,10 +60,13 @@ public class Colors : MonoBehaviour
         CheckMarkColbyA.GetComponent<RawImage>().enabled = true;
         CheckMarkColbyH.GetComponent<RawImage>().enabled = false;
         CheckMarkColbyR.GetComponent<RawImage>().enabled = false;
+        //Cursor.visible = false;
+        //Screen.lockCursor = false;
     }
     
     public void ColbyH()
     {
+        Colby.GetComponent<SkinnedMeshRenderer>().material = ColbyHannah;
         CheckMarkColbyN.GetComponent<RawImage>().enabled = false;
         CheckMarkColbyA.GetComponent<RawImage>().enabled = false;
         CheckMarkColbyH.GetComponent<RawImage>().enabled = true;
@@ -70,10 +75,13 @@ public class Colors : MonoBehaviour
 
     public void ColbyR()
     {
+        Colby.GetComponent<SkinnedMeshRenderer>().material = ColbyRex;
         CheckMarkColbyN.GetComponent<RawImage>().enabled = false;
         CheckMarkColbyA.GetComponent<RawImage>().enabled = false;
         CheckMarkColbyH.GetComponent<RawImage>().enabled = false;
         CheckMarkColbyR.GetComponent<RawImage>().enabled = true;
+        //Cursor.visible = false;
+        //Screen.lockCursor = false;
     }
 
     public void RoboN()
@@ -83,6 +91,8 @@ public class Colors : MonoBehaviour
         CheckMarkRoboGnW.GetComponent<RawImage>().enabled = false;
         CheckMarkRoboPinPu.GetComponent<RawImage>().enabled = false;
         CheckMarkRoboBnO.GetComponent<RawImage>().enabled = false;
+        //Cursor.visible = false;
+        //Screen.lockCursor = false;
     }
 
     public void RoboGnW()
@@ -92,23 +102,31 @@ public class Colors : MonoBehaviour
         CheckMarkRoboGnW.GetComponent<RawImage>().enabled = true;
         CheckMarkRoboPinPu.GetComponent<RawImage>().enabled = false;
         CheckMarkRoboBnO.GetComponent<RawImage>().enabled = false;
+        //Cursor.visible = false;
+        //Screen.lockCursor = false;
     }
 
     public void RoboPinPu()
     {
+        Robo.GetComponent<SkinnedMeshRenderer>().material = RoboPinknPurple;
         CheckMarkRoboN.GetComponent<RawImage>().enabled = false;
         CheckMarkRoboGnW.GetComponent<RawImage>().enabled = false;
         CheckMarkRoboPinPu.GetComponent<RawImage>().enabled = true;
         CheckMarkRoboBnO.GetComponent<RawImage>().enabled = false;
+        //Cursor.visible = false;
+       // Screen.lockCursor = false;
 
     }
 
     public void RoboBnO()
     {
+        Robo.GetComponent<SkinnedMeshRenderer>().material = RoboBluenOrange;
         CheckMarkRoboN.GetComponent<RawImage>().enabled = false;
         CheckMarkRoboGnW.GetComponent<RawImage>().enabled = false;
         CheckMarkRoboPinPu.GetComponent<RawImage>().enabled = false;
         CheckMarkRoboBnO.GetComponent<RawImage>().enabled = true;
+        //Cursor.visible = false;
+        //Screen.lockCursor = false;
     }
 
 }

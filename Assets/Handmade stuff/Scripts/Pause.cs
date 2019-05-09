@@ -28,13 +28,15 @@ public class Pause : MonoBehaviour
                 Time.timeScale = 0;
                 PauseMenu.GetComponent<Canvas>().enabled = true;
                 UI.GetComponent<Canvas>().enabled = false;
-                Cursor.visible = false;
-                Screen.lockCursor = false;
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
             }
             else
             {
                 //unpause
                 Resume();
+                //Cursor.visible = false;
+                //Cursor.lockState = CursorLockMode.Locked;
             }
 
         }
@@ -45,12 +47,21 @@ public class Pause : MonoBehaviour
         Time.timeScale = 1;
         PauseMenu.GetComponent<Canvas>().enabled = false;
         UI.GetComponent<Canvas>().enabled = true;
+
     }
 
     public void Customize()
     {
         PauseMenu.GetComponent<Canvas>().enabled = false;
         Customize3.GetComponent<Canvas>().enabled = true;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
 
+    public void BacktoPause()
+    {
+        Time.timeScale = 0;
+        PauseMenu.GetComponent<Canvas>().enabled = true;
+        Customize3.GetComponent<Canvas>().enabled = false;
     }
 }

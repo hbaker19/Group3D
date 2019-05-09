@@ -292,7 +292,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 43331487}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 267445112}
+        m_MethodName: ColbyH
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &43331487
@@ -302,7 +313,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 43331484}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -413,7 +424,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 125600239}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1710420407}
+        m_MethodName: BacktoPause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &125600239
@@ -423,7 +445,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 125600236}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -712,7 +734,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 256879859}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -844,7 +866,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 259335195}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -979,7 +1001,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 267445107}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}
@@ -1007,12 +1029,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ColbyNormal: {fileID: 2100000, guid: 73854d5ecace4f84898b9dd599f5c611, type: 2}
   ColbyAresen: {fileID: 2100000, guid: c2b8c026fdae2a848a11efc8d8c28148, type: 2}
-  ColbyHannah: {fileID: 0}
-  ColbyRex: {fileID: 0}
+  ColbyHannah: {fileID: 2100000, guid: 4951826675c4f304bad24cefcdc50d0a, type: 2}
+  ColbyRex: {fileID: 2100000, guid: cdc918243d56a5540b1957db4034a03b, type: 2}
   RoboNormal: {fileID: 2100000, guid: 546d74ccea59fca4fa5d8afa755badcc, type: 2}
   RoboGoldnWhite: {fileID: 2100000, guid: 6e7b6343b9b0a1e43a0fd97d6e4d646f, type: 2}
-  RoboPinknPurple: {fileID: 0}
-  RoboBluenOrange: {fileID: 0}
+  RoboPinknPurple: {fileID: 2100000, guid: 28556f0076f2e56488cd7f091e417cf5, type: 2}
+  RoboBluenOrange: {fileID: 2100000, guid: 02f0f8cf69d977347befbce0572b90de, type: 2}
   Colby: {fileID: 1595303494}
   Robo: {fileID: 1511667767}
   CheckMarkColbyN: {fileID: 1625998087}
@@ -1844,7 +1866,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 868530157}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -2191,7 +2213,7 @@ GameObject:
   - component: {fileID: 990181110}
   - component: {fileID: 990181109}
   m_Layer: 0
-  m_Name: Button
+  m_Name: Resume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2259,7 +2281,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 990181110}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1710420407}
+        m_MethodName: Resume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &990181110
@@ -2269,7 +2302,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 990181107}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -2380,7 +2413,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 998440339}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 267445112}
+        m_MethodName: ColbyR
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &998440339
@@ -2390,7 +2434,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 998440336}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -2528,7 +2572,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1120900653}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -3039,7 +3083,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1633155037}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 267445112}
+        m_MethodName: RoboPinPu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1633155037
@@ -3049,7 +3104,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1633155034}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -3111,7 +3166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PauseMenu: {fileID: 1094916937}
   UI: {fileID: 1687158152}
-  Customize3: {fileID: 0}
+  Customize3: {fileID: 267445111}
 --- !u!114 &1710615533 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1044798023, guid: f6c47bd1d08dcd147bcc2a81b1d2c42d,
@@ -3623,7 +3678,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2142143010}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 267445112}
+        m_MethodName: RoboBnO
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2142143010
@@ -3633,7 +3699,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2142143007}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -3816,6 +3882,24 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 210
       objectReference: {fileID: 0}
+    - target: {fileID: 3189411641020746923, guid: f6c47bd1d08dcd147bcc2a81b1d2c42d,
+        type: 3}
+      propertyPath: m_Drag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5473358079579594662, guid: f6c47bd1d08dcd147bcc2a81b1d2c42d,
+        type: 3}
+      propertyPath: m_Drag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 555780953, guid: f6c47bd1d08dcd147bcc2a81b1d2c42d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 555780952, guid: f6c47bd1d08dcd147bcc2a81b1d2c42d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 555780952, guid: f6c47bd1d08dcd147bcc2a81b1d2c42d, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 4
@@ -3828,6 +3912,30 @@ PrefabInstance:
       propertyPath: m_Navigation.m_SelectOnDown
       value: 
       objectReference: {fileID: 1710615533}
+    - target: {fileID: 555780952, guid: f6c47bd1d08dcd147bcc2a81b1d2c42d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 555780952, guid: f6c47bd1d08dcd147bcc2a81b1d2c42d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 555780952, guid: f6c47bd1d08dcd147bcc2a81b1d2c42d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1710420407}
+    - target: {fileID: 555780952, guid: f6c47bd1d08dcd147bcc2a81b1d2c42d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Customize
+      objectReference: {fileID: 0}
+    - target: {fileID: 555780952, guid: f6c47bd1d08dcd147bcc2a81b1d2c42d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 939432767, guid: f6c47bd1d08dcd147bcc2a81b1d2c42d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 939432766, guid: f6c47bd1d08dcd147bcc2a81b1d2c42d, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 4
@@ -3850,6 +3958,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1044798024, guid: f6c47bd1d08dcd147bcc2a81b1d2c42d, type: 3}
       propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1044798024, guid: f6c47bd1d08dcd147bcc2a81b1d2c42d, type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1044798023, guid: f6c47bd1d08dcd147bcc2a81b1d2c42d, type: 3}
@@ -3876,6 +3988,10 @@ PrefabInstance:
       propertyPath: m_Navigation.m_SelectOnDown
       value: 
       objectReference: {fileID: 719175897}
+    - target: {fileID: 1399793440, guid: f6c47bd1d08dcd147bcc2a81b1d2c42d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1399793439, guid: f6c47bd1d08dcd147bcc2a81b1d2c42d, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 4
@@ -3888,6 +4004,10 @@ PrefabInstance:
       propertyPath: m_Navigation.m_SelectOnDown
       value: 
       objectReference: {fileID: 990181109}
+    - target: {fileID: 1648116388, guid: f6c47bd1d08dcd147bcc2a81b1d2c42d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1648116387, guid: f6c47bd1d08dcd147bcc2a81b1d2c42d, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 4
