@@ -66,7 +66,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             }
             else
             {
-                GetComponent<Rigidbody>().drag = 3;
+                GetComponent<Rigidbody>().drag = 1;
             }
             /*if(h != 0 || v != 0)
             {
