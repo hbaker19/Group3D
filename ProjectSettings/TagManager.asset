@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Death
   - Stairs
+  - ChatBox (C)
+  - ChatBox (R)
+  - Hannah
   layers:
   - Default
   - TransparentFX
