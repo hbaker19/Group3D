@@ -9,6 +9,9 @@ TagManager:
   - ChatBox (C)
   - ChatBox (R)
   - Hannah
+  - Rex
+  - Robo
+  - Colby
   layers:
   - Default
   - TransparentFX
