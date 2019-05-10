@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 33605882098649540}
   - component: {fileID: 23874983303281748}
   - component: {fileID: 4925603337759024795}
+  - component: {fileID: 1993618769593149969}
+  - component: {fileID: 3402600695390250744}
   m_Layer: 0
   m_Name: DockMiddle
   m_TagString: Untagged
@@ -90,5 +92,31 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.1407874, y: 0.27658463, z: 2.168027}
-  m_Center: {x: 0.011265039, y: 0.07140565, z: -0.000005722046}
+  m_Size: {x: 1.9298646, y: 0.27658463, z: 2.168027}
+  m_Center: {x: -0.0031437874, y: 0.07140565, z: -0.000005722046}
+--- !u!65 &1993618769593149969
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932873321206794}
+  m_Material: {fileID: 13400000, guid: 3aeb7dadc0c69d54d9e5777e9d5631f1, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.28592587, y: 0.33262396, z: 2.168027}
+  m_Center: {x: 1.0579894, y: 0.043385983, z: -0.000005722046}
+--- !u!65 &3402600695390250744
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932873321206794}
+  m_Material: {fileID: 13400000, guid: 3aeb7dadc0c69d54d9e5777e9d5631f1, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.21829557, y: 0.3047638, z: 2.168027}
+  m_Center: {x: -0.9748595, y: 0.057316065, z: -0.000005722046}
