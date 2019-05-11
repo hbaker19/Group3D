@@ -1,1 +1,1 @@
-Line 187, player animator controller. Try adding +1 or +2 to z and x velocities.
+Line 187, Third Person Controller: changed x and z velocities to * 1.5f
