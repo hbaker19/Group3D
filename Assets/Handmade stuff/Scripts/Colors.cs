@@ -9,6 +9,7 @@ public class Colors : MonoBehaviour
     public Material ColbyAresen;
     public Material ColbyHannah;
     public Material ColbyRex;
+    public Material ShadowStoryTeller;
 
 
 
@@ -24,6 +25,7 @@ public class Colors : MonoBehaviour
     public RawImage CheckMarkColbyA;
     public RawImage CheckMarkColbyH;
     public RawImage CheckMarkColbyR;
+    public RawImage CheckMarkShadowST;
 
     public RawImage CheckMarkRoboN;
     public RawImage CheckMarkRoboGnW;
@@ -50,6 +52,7 @@ public class Colors : MonoBehaviour
         CheckMarkColbyA.GetComponent<RawImage>().enabled = false;
         CheckMarkColbyH.GetComponent<RawImage>().enabled = false;
         CheckMarkColbyR.GetComponent<RawImage>().enabled = false;
+        CheckMarkShadowST.GetComponent<RawImage>().enabled = false;
         //Cursor.visible = false;
         //Screen.lockCursor = false;
     }
@@ -61,6 +64,7 @@ public class Colors : MonoBehaviour
         CheckMarkColbyA.GetComponent<RawImage>().enabled = true;
         CheckMarkColbyH.GetComponent<RawImage>().enabled = false;
         CheckMarkColbyR.GetComponent<RawImage>().enabled = false;
+        CheckMarkShadowST.GetComponent<RawImage>().enabled = false;
         //Cursor.visible = false;
         //Screen.lockCursor = false;
     }
@@ -72,6 +76,7 @@ public class Colors : MonoBehaviour
         CheckMarkColbyA.GetComponent<RawImage>().enabled = false;
         CheckMarkColbyH.GetComponent<RawImage>().enabled = true;
         CheckMarkColbyR.GetComponent<RawImage>().enabled = false;
+        CheckMarkShadowST.GetComponent<RawImage>().enabled = false;
     }
 
     public void ColbyR()
@@ -81,8 +86,19 @@ public class Colors : MonoBehaviour
         CheckMarkColbyA.GetComponent<RawImage>().enabled = false;
         CheckMarkColbyH.GetComponent<RawImage>().enabled = false;
         CheckMarkColbyR.GetComponent<RawImage>().enabled = true;
+        CheckMarkShadowST.GetComponent<RawImage>().enabled = false;
         //Cursor.visible = false;
         //Screen.lockCursor = false;
+    }
+
+    public void ShadowST()
+    {
+        Colby.GetComponent<SkinnedMeshRenderer>().material = ShadowStoryTeller;
+        CheckMarkColbyN.GetComponent<RawImage>().enabled = false;
+        CheckMarkColbyA.GetComponent<RawImage>().enabled = false;
+        CheckMarkColbyH.GetComponent<RawImage>().enabled = false;
+        CheckMarkColbyR.GetComponent<RawImage>().enabled = false;
+        CheckMarkShadowST.GetComponent<RawImage>().enabled = true;
     }
 
     public void RoboN()
