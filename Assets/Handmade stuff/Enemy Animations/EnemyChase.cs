@@ -13,13 +13,14 @@ public class EnemyChase : MonoBehaviour {
     public float paceDistance = 3.0f;
     public float paceSpeed = 2.0f;
     public Animator Animator;
+    Vector3 playerPosition;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         player = GameObject.FindGameObjectWithTag("Player");
         startPosition = transform.position;
         Animator = GetComponent<Animator>();
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
