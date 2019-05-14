@@ -69,5 +69,16 @@ public class Pause : MonoBehaviour
     public void MainMenu()
     {
         SceneManager.LoadScene("Menu");
+        Time.timeScale = 1;
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
+    public void NewGame()
+    {
+        SceneManager.LoadScene("World 1");
     }
 }

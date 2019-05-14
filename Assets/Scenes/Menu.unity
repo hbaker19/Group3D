@@ -983,16 +983,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.2
       objectReference: {fileID: 0}
-    - target: {fileID: -7780734103960978560, guid: bac2a1e4d7321a54292718c84238127a,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 73854d5ecace4f84898b9dd599f5c611, type: 2}
     - target: {fileID: -6686056005834992781, guid: bac2a1e4d7321a54292718c84238127a,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 60347f9ea8b280f418039b6ff450cc06, type: 2}
+    - target: {fileID: -7780734103960978560, guid: bac2a1e4d7321a54292718c84238127a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 73854d5ecace4f84898b9dd599f5c611, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bac2a1e4d7321a54292718c84238127a, type: 3}
 --- !u!1 &668484453
@@ -1338,6 +1338,7 @@ GameObject:
   - component: {fileID: 887634595}
   - component: {fileID: 887634594}
   - component: {fileID: 887634598}
+  - component: {fileID: 887634599}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1455,6 +1456,7 @@ MonoBehaviour:
   ColbyAresen: {fileID: 2100000, guid: c2b8c026fdae2a848a11efc8d8c28148, type: 2}
   ColbyHannah: {fileID: 2100000, guid: 4951826675c4f304bad24cefcdc50d0a, type: 2}
   ColbyRex: {fileID: 2100000, guid: cdc918243d56a5540b1957db4034a03b, type: 2}
+  ShadowStoryTeller: {fileID: 0}
   RoboNormal: {fileID: 2100000, guid: 546d74ccea59fca4fa5d8afa755badcc, type: 2}
   RoboGoldnWhite: {fileID: 2100000, guid: 6e7b6343b9b0a1e43a0fd97d6e4d646f, type: 2}
   RoboPinknPurple: {fileID: 2100000, guid: 28556f0076f2e56488cd7f091e417cf5, type: 2}
@@ -1465,10 +1467,26 @@ MonoBehaviour:
   CheckMarkColbyA: {fileID: 0}
   CheckMarkColbyH: {fileID: 0}
   CheckMarkColbyR: {fileID: 0}
+  CheckMarkShadowST: {fileID: 0}
   CheckMarkRoboN: {fileID: 0}
   CheckMarkRoboGnW: {fileID: 0}
   CheckMarkRoboPinPu: {fileID: 0}
   CheckMarkRoboBnO: {fileID: 0}
+--- !u!114 &887634599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887634593}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 033c2695d6632004987be1a1160d4a8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PauseMenu: {fileID: 0}
+  UI: {fileID: 0}
+  Customize3: {fileID: 0}
 --- !u!1 &1120495352
 GameObject:
   m_ObjectHideFlags: 0
@@ -2341,7 +2359,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1554303472}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 887634599}
+        m_MethodName: NewGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1554303472
@@ -3147,7 +3176,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2059327466}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 887634599}
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2059327466

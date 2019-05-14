@@ -55,7 +55,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             float v = CrossPlatformInputManager.GetAxis("Vertical");
             bool crouch = Input.GetKey(KeyCode.C);
             RaycastHit hit;
-            if(Physics.Raycast(transform.position, -transform.up, out hit, 0.1f) && h == 0 && v == 0 && !m_Jump)
+            if(Physics.Raycast(transform.position, -transform.up, out hit, 0.05f) && h == 0 && v == 0 && !m_Jump)
             {
                 if(hit.collider.gameObject.tag == "Stairs")
                 {
@@ -66,7 +66,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             }
             else
             {
-                GetComponent<Rigidbody>().drag = 1;
+                GetComponent<Rigidbody>().drag = 0.5f;
             }
             /*if(h != 0 || v != 0)
             {

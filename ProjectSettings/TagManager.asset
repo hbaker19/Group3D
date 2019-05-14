@@ -12,6 +12,8 @@ TagManager:
   - Rex
   - Robo
   - Colby
+  - Shard
+  - WinCrystal
   layers:
   - Default
   - TransparentFX
