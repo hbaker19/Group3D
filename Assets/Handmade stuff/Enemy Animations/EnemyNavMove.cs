@@ -28,22 +28,21 @@ public class EnemyNavMove : MonoBehaviour {
         if(direction.magnitude <= chaseDistance){
             //Start chasing.
 			agent.destination = player.transform.position;
-            GetComponent<Animator>().SetBool("Looking Around", false);
-            GetComponent<Animator>().SetBool("Start Chasing", true);
-            GetComponent<Animator>().SetBool("Chasing", true);
-            GetComponent<Animator>().SetBool("Going Home", false);
+            animator.SetBool("Looking Around", false);
+            animator.SetBool("Start Chasing", true);
+            animator.SetBool("Chasing", true);
+            animator.SetBool("Going Home", false);
         }
         else if ((transform.position - home).magnitude >= 1){
             //Otherwise, go home.
             agent.destination = home;
-            GetComponent<Animator>().SetBool("Start Chasing", false);
-            GetComponent<Animator>().SetBool("Chasing", false);
-            GetComponent<Animator>().SetBool("Going Home", true);
+            animator.SetBool("Start Chasing", false);
+            animator.SetBool("Chasing", false);
+            animator.SetBool("Going Home", true);
         }
         else
         {
-            
-            GetComponent<Animator>().SetBool("Looking Around", true);
+            animator.SetBool("Looking Around", true);
         }
         Debug.Log(transform.position + " " + home);
     }
@@ -54,10 +53,10 @@ public class EnemyNavMove : MonoBehaviour {
         if (other.gameObject.tag == "Player")
         {
             //Start attacking.
-            GetComponent<Animator>().SetBool("Start Attacking", true);
-            GetComponent<Animator>().SetBool("Attacking", true);
-            GetComponent<Animator>().SetBool("Start Chasing", false);
-            GetComponent<Animator>().SetBool("Chasing", false);
+            animator.SetBool("Start Attacking", true);
+            animator.SetBool("Attacking", true);
+            animator.SetBool("Start Chasing", false);
+            animator.SetBool("Chasing", false);
         }   
     }
 
@@ -67,10 +66,10 @@ public class EnemyNavMove : MonoBehaviour {
         if (other.gameObject.tag == "Player")
         {
             //Resume chasing.
-            GetComponent<Animator>().SetBool("Start Attacking", false);
-            GetComponent<Animator>().SetBool("Attacking", false);
-            GetComponent<Animator>().SetBool("Start Chasing", true);
-            GetComponent<Animator>().SetBool("Chasing", true);
+            animator.SetBool("Start Attacking", false);
+            animator.SetBool("Attacking", false);
+            animator.SetBool("Start Chasing", true);
+            animator.SetBool("Chasing", true);
         }
     }
 }
