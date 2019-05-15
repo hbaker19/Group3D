@@ -9,6 +9,7 @@ public class Coin : MonoBehaviour {
     public int coinCount = 0;
     public Text Coins;
     public Text Nope;
+    public Text End;
 	// Use this for initialization
 	void Start () {
         Coins.GetComponent<Text>().text = coinCount + "/ 5 Shards";
@@ -18,6 +19,11 @@ public class Coin : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         Coins.GetComponent<Text>().text = coinCount + "/ 5 Shards";
+        if (coinCount == 5f)
+        {
+            Coins.GetComponent<Text>().enabled = false;
+            End.GetComponent<Text>().enabled = true;
+        }
     }
 
     void OnTriggerEnter(Collider collision)

@@ -81,4 +81,10 @@ public class Pause : MonoBehaviour
     {
         SceneManager.LoadScene("World 1");
     }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale = 1;
+    }
 }
