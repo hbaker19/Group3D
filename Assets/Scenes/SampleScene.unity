@@ -126,7 +126,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh18300
+  m_Name: pb_Mesh18338
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -289,7 +289,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-20272
+  m_Name: pb_Mesh18318
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -526,6 +526,20 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 308351341}
   m_PrefabAsset: {fileID: 0}
+--- !u!136 &308351343
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308351342}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 4.3550715
+  m_Height: 9.840723
+  m_Direction: 1
+  m_Center: {x: -0.19092739, y: 4.420361, z: 0.3407818}
 --- !u!4 &308351348 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2507627715817399786, guid: 9ec456c7af37b9148ab6ce5d3af1b6a7,
@@ -930,7 +944,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 6.8e-43, y: 0, z: 0, w: 0.000015706304}
+  m_BoundingSphereOverride: {x: 5.32e-43, y: 0, z: 0, w: -219866.62}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -1356,25 +1370,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1219972002}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1219972004
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1219972003}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93507aad4bcecd94a9a7c164d582ad96, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 308351342}
-  chaseSpeed: 3
-  chaseTriggerDistance: 3
-  paceDirection: {x: 3, y: 1, z: 3}
-  paceDistance: 3
-  paceSpeed: 2
-  Animator: {fileID: 1219972005}
 --- !u!95 &1219972005 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: -6057140222963153312, guid: 7ec70edeaa33cfd49a22daf1c9d24cbe,
@@ -1418,6 +1413,20 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!136 &1219972009
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219972003}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.9199655
+  m_Height: 7.422009
+  m_Direction: 1
+  m_Center: {x: 0, y: 3.2110033, z: 0.0099384785}
 --- !u!1001 &1801658309
 PrefabInstance:
   m_ObjectHideFlags: 0
