@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WIN!.unity
     guid: 4377d6f8085da53419119e201d23ddf9
+  - enabled: 1
+    path: Assets/Scenes/CACMenu.unity
+    guid: 2dfd326d11f09884482494fdbe24d385
   m_configObjects: {}

@@ -87,4 +87,9 @@ public class Pause : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Time.timeScale = 1;
     }
+
+    public void CACCA()
+    {
+        SceneManager.LoadScene("CACMenu");
+    }
 }
