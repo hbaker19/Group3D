@@ -1,0 +1,6 @@
+-Text for save button
+-Scale up UI
+-Anchor Main Menu
+-Enlarge Text
+-Custom Buttons enlarge
+-Chaper 1 Anchor
