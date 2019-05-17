@@ -12,4 +12,5 @@ Left Stick: Movement
 Y: Jump
 X: Load
 A: Save
+Start: Pause
 
