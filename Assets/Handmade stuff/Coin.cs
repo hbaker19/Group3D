@@ -10,6 +10,7 @@ public class Coin : MonoBehaviour {
     public Text Coins;
     public Text Nope;
     public Text End;
+    public string scene;
 	// Use this for initialization
 	void Start () {
         Coins.GetComponent<Text>().text = coinCount + "/ 5 Shards";
@@ -37,7 +38,7 @@ public class Coin : MonoBehaviour {
 
         if (collision.gameObject.tag == "WinCrystal" && coinCount == 5f)
         {
-            SceneManager.LoadScene("WIN!");
+            SceneManager.LoadScene(scene);
         }
         else if (collision.gameObject.tag == "WinCrystal")
         {
